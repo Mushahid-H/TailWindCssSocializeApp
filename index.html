@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Socialize</title>
+  </head>
+  <body>
+    <nav class="bg-blue-600 align-middle w-full h-15 text-white">
+      <!-- <div class="left align-middle inline-block"> -->
+      <!-- </div> -->
+      <div class="logo font-bold h-3 ms-16 text-2xl pt-2 cursor-pointer">
+        Socialize
+      </div>
+      <div class="flex ml-56 centerDiv">
+        <div class="bg-white w-1/2 h-8 rounded-full flex mb-4">
+          <i class="fa fa-search mt-2 ms-2 text-black"></i>
+          <input
+            type="search"
+            class="w-full rounded-full focus:outline-none ms-3 text-black pe-4"
+            placeholder="Search for friends, posts or videos"
+          />
+        </div>
+
+        <div class="flex mx-10 gap-4 cursor-pointer">
+          <p>HomePage</p>
+          <p>TimeLine</p>
+        </div>
+        <div class="icons gap-6 flex ms-auto cursor-pointer">
+          <i class="fa fa-user relative text-2xl">
+            <span
+              class="w-4 h-4 bg-red-600 rounded-full absolute text-sm text-center top-0 left-3"
+              >1</span
+            >
+          </i>
+          <i class="fa fa-wechat relative text-2xl">
+            <span
+              class="w-4 h-4 bg-red-600 rounded-full absolute text-sm text-center top-0 left-3"
+              >1</span
+            >
+          </i>
+          <i class="fa fa-bell relative text-2xl">
+            <span
+              class="w-4 h-4 bg-red-600 rounded-full absolute text-sm text-center top-0 left-3"
+              >1</span
+            >
+          </i>
+        </div>
+        <img
+          src="./IMG_0601.JPG"
+          alt=""
+          class="h-8 w-8 rounded-full mx-10 mb-2 cursor-pointer"
+        />
+      </div>
+    </nav>
+
+    <button
+      data-drawer-target="separator-sidebar"
+      data-drawer-toggle="separator-sidebar"
+      aria-controls="separator-sidebar"
+      type="button"
+      class="inline-flex items-center p-2 mt-2 ml-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+    >
+      <span class="sr-only">Open sidebar</span>
+      <svg
+        class="w-6 h-6"
+        aria-hidden="true"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          fill-rule="evenodd"
+          d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"
+        ></path>
+      </svg>
+    </button>
+
+    <aside
+      id="separator-sidebar"
+      class="z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
+      aria-label="Sidebar"
+    >
+      <div class="h-full px-3 py-4 overflow-y-auto bg-white dark:bg-gray-800">
+        <ul class="space-y-2 font-medium">
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+            >
+              <i class="fa fa-feed"></i>
+              <span class="ml-3">Feed</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+            >
+              <i class="fa fa-wechat"></i>
+              <span class="flex-1 ml-3 whitespace-nowrap">Chats</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+            >
+              <i class="fa fa-youtube-play" aria-hidden="true"></i>
+              <span class="flex-1 ml-3 whitespace-nowrap">Videos</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+            >
+              <i class="fa fa-group"></i>
+              <span class="flex-1 ml-3 whitespace-nowrap">Groups</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+            >
+              <i class="fa fa-bookmark"></i>
+              <span class="flex-1 ml-3 whitespace-nowrap">Bookmarks</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+            >
+              <i class="fa fa-question-circle-o"></i>
+              <span class="flex-1 ml-3 whitespace-nowrap">Questions </span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+            >
+              <i class="fa fa-briefcase" aria-hidden="true"></i>
+              <span class="flex-1 ml-3 whitespace-nowrap">Jobs</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+            >
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <span class="flex-1 ml-3 whitespace-nowrap">Events</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+            >
+              <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+              <span class="flex-1 ml-3 whitespace-nowrap">Courses</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+            >
+              <button type="button" class="bg-gray-100 rounded p-3">
+                Show More
+              </button>
+            </a>
+          </li>
+        </ul>
+        <ul
+          class="pt-4 mt-4 space-y-2 font-medium border-t border-gray-200 dark:border-gray-700"
+        >
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+            >
+              <img
+                src="./IMG_0601.JPG"
+                alt=""
+                class="h-6 w-6 rounded-full object-cover"
+              />
+              <span class="ml-4 text-sm">Mahendar Singh Rathore</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+            >
+              <img
+                src="./IMG_0030.JPG"
+                alt=""
+                class="h-6 w-6 rounded-full object-cover"
+              />
+              <span class="ml-4 text-sm">Gul Khan</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+            >
+              <img
+                src="./IMG_0062.JPG"
+                alt=""
+                class="h-6 w-6 rounded-full object-cover"
+              />
+              <span class="ml-4 text-sm">Bacha Khan Baba</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+            >
+              <img
+                src="./IMG_0079.JPG"
+                alt=""
+                class="h-6 w-6 rounded-full object-cover"
+              />
+              <span class="ml-4 text-sm">Yaseen Mangrekar</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+            >
+              <img
+                src="./IMG_0293.JPG"
+                alt=""
+                class="h-6 w-6 rounded-full object-cover"
+              />
+              <span class="ml-4 text-sm">kolkola Jan Mama</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+            >
+              <img
+                src="./IMG_0297.JPG"
+                alt=""
+                class="h-6 w-6 rounded-full object-cover"
+              />
+              <span class="ml-4 text-sm">Mushahid Bacha Don</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+            >
+              <img
+                src="./4.jpg"
+                alt=""
+                class="h-6 w-6 rounded-full object-cover"
+              />
+              <span class="ml-4 text-sm">Shahrukh Khan</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+            >
+              <img
+                src="./3.jpg"
+                alt=""
+                class="h-6 w-6 rounded-full object-cover"
+              />
+              <span class="ml-4 text-sm">Patangona basha</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+            >
+              <img
+                src="./1.jpg"
+                alt=""
+                class="h-6 w-6 rounded-full object-cover"
+              />
+              <span class="ml-4 text-sm">Lion Kingo</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+            >
+              <img
+                src="./2.jpg"
+                alt=""
+                class="h-6 w-6 rounded-full object-cover"
+              />
+              <span class="ml-4 text-sm">Tato Gul</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+  </body>
+</html>
